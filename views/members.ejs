@@ -1,0 +1,48 @@
+<%- include("templates/header") %>
+<head>
+  <style>
+    .bordered-column {
+      border: 2px solid #686161;
+      border-radius: 5px; 
+      padding: 10px;
+    }
+
+    .uniform-image {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      margin: auto;
+    }
+  </style>
+</head>
+<div class="container-fluid">
+  <h1>Welcome to the VIP lounge 😎, <%= username %>!</h1>
+</div>
+<div class="container-fluid">
+  <h2 style="padding-bottom: 30px">Look at our guest</h2>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 bordered-column">
+      <img
+        src="monkeygif1.gif"
+        class="img-responsive uniform-image"
+      />
+    </div>
+    <div class="col-sm-4 bordered-column">
+      <img src="monkeygif2.gif" class="img-responsive uniform-image"/>
+    </div>
+    <div class="col-sm-4 bordered-column">
+      <img
+        src="monkey5.jpg"
+        class="img-responsive uniform-image"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="padding-top: 50px; padding-bottom: 30px;">
+  <a class="btn btn-primary" href="/" role="button" style="margin: auto; padding: 10px; font-size: 20px">Home</a>
+  <a class="btn btn-primary" href="/logout" role="button" style="margin: auto; padding: 10px; font-size: 20px">Log out</a>
+</div>
+<%- include("templates/footer") %>
