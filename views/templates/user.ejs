@@ -3,13 +3,7 @@
     <form class="d-inline-block" method="POST" action="/admin/promote">
       <input type="hidden" name="userId" value="<%= user._id %>" />
       <input type="hidden" name="action" value="promote" />
-      <button
-        class="btn btn-danger rounded-pill px-3"
-        type="submit"
-        style="margin-left: 12px"
-      >
-        Promote to Admin
-      </button>
+      <button class="btn btn-danger rounded-pill px-3"type="submit" style="margin-left: 12px">Promote to Admin</button>
     </form>
     <form class="d-inline-block" method="POST" action="/admin/demote">
       <input type="hidden" name="userId" value="<%= user._id %>" />

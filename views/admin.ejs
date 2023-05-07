@@ -21,22 +21,22 @@
     }
 
     .table-centered thead tr {
-      border-bottom: 4px double blue;
+      border-bottom: 4px double rgb(0, 0, 0);
+    }
+    .black-border {
+      border: 1px solid black;
     }
   </style>
 </head>
 <body>
   <div class="container-fluid">
-    <h1 style="text-align: center">Welcome, <%= username %>!</h1>
-  </div>
-  <div class="container-fluid">
     <h2 style="text-align: center; padding-bottom: 40px;">Members Dashboard</h2>
   </div>
   <div class="container-fluid full-width-container">
-    <table class="table table-hover table-centered">
+    <table class="table table-hover table-centered black-border">
       <thead>
         <tr>
-          <th scope="col">Username</th>
+          <th scope="col">Users</th>
           <th scope="col">User Type</th>
           <th scope="col">Actions</th>
         </tr>
